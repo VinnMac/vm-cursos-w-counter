@@ -1,0 +1,19 @@
+@use 'variables' as*;
+
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba($backgroundColor , .85);
+    color: $textColor;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .social-media-links {
+            display: flex;
+            gap: 8px;
+
+        }
+    }
+}

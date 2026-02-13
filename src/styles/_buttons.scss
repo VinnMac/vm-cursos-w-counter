@@ -1,0 +1,26 @@
+@use 'variables' as*;
+
+.button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: .8rem;
+    text-align: center;
+
+    &--dark {
+        background-color: rgba(255,255,255, .08);
+        border: 1px solid rgba($textColor, 0.18);
+        backdrop-filter: blur(4px);
+        color: $textColor;
+        transition: background-color, .25s, ease ;
+
+        &:hover {
+            background-color: rgba($textColor, .85);
+            color: rgba($backgroundColor, .8);
+        }
+    }
+
+    @media (max-width: 640px) {
+        font-size: 14px;
+    }
+}

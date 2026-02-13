@@ -1,0 +1,42 @@
+@use 'variables' as*;
+
+.event {
+    padding: 6rem 0 4rem;
+    background: linear-gradient(180deg, #ffffff 0%, #f4f6f8 100%);
+
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+
+    &__details {
+
+        &__title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__image {
+        max-width: 400px;
+        border-radius: .8rem;
+        box-shadow: 0 8px 32px rgba($backgroundColor, .25);
+    }
+
+    &--image-left {
+        flex-direction: row-reverse;
+    }
+
+    @media (max-width: 640px) {
+        .container {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        &__image {
+            max-width: 300px;
+        }
+    }
+}
